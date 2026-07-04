@@ -25,9 +25,9 @@
 <ul>
   <li><strong>PDF file content:</strong> When you convert a PDF, its content is processed to extract tables. Text-based PDFs are parsed locally in your browser and never leave your device. In AI mode, the PDF content is sent to our backend server for enhanced extraction.</li>
   <li><strong>Browser fingerprint:</strong> A hash derived from local browser signals (canvas rendering, user agent, screen resolution, timezone, hardware concurrency) is generated locally and sent to our backend to detect abuse and enforce fair usage of the free tier. It is not used for advertising or tracking and cannot identify you personally.</li>
-  <li><strong>Page URL:</strong> The current tab URL is read to detect whether the page contains a PDF. This is not transmitted to our servers.</li>
   <li><strong>Usage settings:</strong> Preferences such as output format (Excel/CSV) are stored locally in your browser using Chrome storage.</li>
   <li><strong>Feedback (optional):</strong> If you choose to submit feedback through the in-app rating prompt, your message and star rating are sent to our backend. No email or other personal identifier is collected.</li>
+  <li><strong>IP address:</strong> Our backend server logs your IP address for installation counts, AI conversion requests, and uninstall events, to prevent abuse of the free tier and understand aggregate usage. It is not linked to your identity and is not shared with third parties.</li>
 </ul>
 
 <h2>3. How We Use Your Data</h2>
@@ -53,12 +53,9 @@
 
 <h2>6. Permissions</h2>
 <ul>
-  <li><strong>activeTab:</strong> To detect whether the current tab contains a PDF and read its URL.</li>
-  <li><strong>tabs:</strong> To monitor tab navigation and automatically detect PDF files.</li>
-  <li><strong>contextMenus:</strong> To add a right-click option on PDF links for quick conversion.</li>
-  <li><strong>storage:</strong> To save your preferences (output format, settings) locally in the browser.</li>
   <li><strong>sidePanel:</strong> To display the conversion interface in Chrome's side panel.</li>
-  <li><strong>Access to all URLs (&lt;all_urls&gt;):</strong> To fetch and process PDF files hosted on any website when you initiate a conversion.</li>
+  <li><strong>storage:</strong> To save your preferences (output format, settings) locally in the browser.</li>
+  <li><strong>Host permission (api.devexthub.com):</strong> To send your PDF to our backend for AI-powered extraction, only when you explicitly choose AI mode for scanned/image-based PDFs.</li>
 </ul>
 
 <h2>7. Data Security</h2>
